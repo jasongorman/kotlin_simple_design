@@ -1,7 +1,4 @@
-fun quote(room: Pair<Double, Double>, carpet: Pair<Double, Boolean>): Double {
-    val (width, length) = room
-    val (pricePerSqrMtr, roundUp) = carpet
-
+fun quote(width: Double, length: Double, pricePerSqrMtr: Double, roundUp: Boolean): Double {
     val area = width * length
 
     val areaToPrice = if (roundUp) {
